@@ -1,0 +1,166 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #4caf50;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer .social {
+  display: flex;
+  gap: 10px;
+}
+
+footer .social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Define a altura máxima do banner */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço do banner */
+}
+
+section {
+  margin: 20px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centraliza os cards */
+}
+
+.card {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px; /* Define a largura máxima dos cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Define uma altura fixa para as imagens */
+  object-fit: cover; /* Mantém o aspecto das imagens */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para o formulário de orçamento */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+  background: #fff; /* Troca a cor de fundo para branco */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Adiciona borda para melhor destaque */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Negrito para os rótulos */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s; /* Transição suave ao focar */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4caf50; /* Cor da borda ao focar */
+}
+
+.form-group button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.form-group button:hover {
+  background-color: #333;
+}
+
+/* Adiciona uma área de observações */
+.form-group textarea {
+  height: 100px; /* Define uma altura fixa para o campo de texto */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
